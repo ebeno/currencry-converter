@@ -10,4 +10,4 @@
 	<li>gulp</li>
 </ul>
 
-Website Link: https://ebeno.github.io/currencry-converter/
+Hosted on Github as: www.curcurrency.tk/ 
