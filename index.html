@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CURRENCY CONVERTER</title>
+	  <link rel="stylesheet" type="text/css" href="css/reset.css">
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body onload="convertCurrency();">
+	<div class="container">
+	<div class="jumbotron">
+		<div class="col-md-12">
+		<h1 class="display-4 text-center">currency converter</h1>
+		<hr>
+		</div>
+	<div class="row">
+		<table>
+			<div>
+			<tr><td><label class= "card-block mb-2 form-control tc-primary"><strong>From:</strong></label></tr>
+				<td><input id="fromAmount" class="badge-warning form-control form-control-md" type="number" size="5" value="1" onkeyup="convertCurrency();" /> </td>
+				<td>
+					<select id="from" class="badge-light form-control form-control-md" onchange="convertCurrency();">
+						<option value="AUD">AUSTRALIAN DOLLAR (AUD)</option>
+						<option value="NGN">NIGERIAN NAIRA (NGN)</option>
+						<option value="CAD">CANADIAN DOLLAR (CAD)</option>
+						<option value="CHF">SWISS FRANC (CHF)</option>
+						<option value="RUB">RUSSIAN RUBBLE</option>
+						<option value="DZD">ALGERIAN DINAR</option>
+						<option value="USD" selected>US DOLLAR (USD)</option>
+						<option value="ILS">ISRAELI NEW SHEKEL</option>
+						<option value="GBP">POUND STERLING (GBP)</option>
+					</select>
+				</td>
+			</tr>
+		</div>
+			<div>
+			<tr><td><label class="card-block mt-4 form-control tc-primary"><strong>To:</strong></label></tr>
+			<tr></td><P>
+				<td><input id="toAmount" class="badge-warning form-control form-control-md" type="number" size="5" disabled="true"> </td>
+				<td>
+					<select id="to" class="badge-light form-control form-control-md" onchange="convertCurrency();">
+						<option value="AUD">AUSTRALIAN DOLLAR (AUD)</option>
+						<option value="NGN" selected>NIGERIAN NAIRA (NGN)</option>
+						<option value="CAD">CANADIAN DOLLAR (CAD)</option>
+						<option value="CHF">SWISS FRANC (CHF)</option>
+						<option value="RUB">RUSSIAN RUBBLE</option>
+						<option value="DZD">ALGERIAN DINAR</option>
+						<option value="USD">US DOLLAR (USD)</option>
+						<option value="ILS">ISRAELI NEW SHEKEL</option>
+						<option value="GBP">POUND STERLING (GBP)</option>
+					</select>
+				</td>
+			</tr>
+			<div>
+</table>
+</div>
+</div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
